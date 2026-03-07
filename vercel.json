@@ -1,15 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/compare.py",
-      "use": "@vercel/python"
-    }
+    { "src": "api/compare.py", "use": "@vercel/python" },
+    { "src": "api/otp.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/api/compare",
-      "dest": "api/compare.py"
-    }
+    { "src": "/api/compare", "dest": "api/compare.py" },
+    { "src": "/api/otp", "dest": "api/otp.py" }
   ]
 }
